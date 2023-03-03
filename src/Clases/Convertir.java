@@ -1,4 +1,4 @@
-package pkg2.conversor;
+package Clases;
 
 import java.io.IOException;
 
@@ -20,8 +20,8 @@ public class Convertir {
         // Crea una URL con las variables
         HttpUrl url = HttpUrl.parse("https://api.apilayer.com/fixer/convert")
                 .newBuilder()
-                .addQueryParameter("to", origin)
-                .addQueryParameter("from", destino)
+                .addQueryParameter("to", destino)
+                .addQueryParameter("from", origin)
                 .addQueryParameter("amount", cantidad)
                 .build();
 
@@ -45,6 +45,7 @@ public class Convertir {
         // Obtiene el valor de la propiedad "result" del objeto JSON
         double result = jsonObject.get("result").getAsDouble();
         
-        return result;
+        return Math.round(result);
     }
+
 }
