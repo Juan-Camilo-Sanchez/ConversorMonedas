@@ -35,6 +35,7 @@ public class Monedas extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jLabel1.setText("Convertidor de Monedas");
 
+        btnIngresarCantidad.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         btnIngresarCantidad.setText("Ingrese la cantidad");
         btnIngresarCantidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -42,8 +43,10 @@ public class Monedas extends javax.swing.JFrame {
             }
         });
 
+        cbxOrigin.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         cbxOrigin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "COP", "EUR", "USD", "GBP", "JPY", "KRW" }));
 
+        cbxDestino.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         cbxDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "EUR", "COP", "GBP", "JPY", "KRW" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -74,7 +77,7 @@ public class Monedas extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbxOrigin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbxDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(btnIngresarCantidad)
                 .addGap(115, 115, 115))
         );
