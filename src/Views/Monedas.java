@@ -43,7 +43,7 @@ public class Monedas extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Convertidor de Divisas");
+        jLabel1.setText("Convertir  Divisas");
 
         cbxDestino.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         cbxDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "EUR", "COP", "GBP", "JPY", "KRW" }));

@@ -126,7 +126,7 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Convertidor de Divisas"/>
+            <Property name="text" type="java.lang.String" value="Convertir  Divisas"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="cbxDestino">
