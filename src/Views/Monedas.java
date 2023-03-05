@@ -36,14 +36,14 @@ public class Monedas extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 255, 255));
 
         cbxOrigin.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
-        cbxOrigin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "COP", "EUR", "USD", "GBP", "JPY", "KRW" }));
+        cbxOrigin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "EUR", "COP", "GBP", "JPY", "KRW" }));
 
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Convertidor de Monedas");
 
         cbxDestino.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
-        cbxDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "EUR", "COP", "GBP", "JPY", "KRW" }));
+        cbxDestino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "COP", "USD", "EUR", "GBP", "JPY", "KRW" }));
 
         btnIngresarCantidad.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         btnIngresarCantidad.setText("Ingrese la cantidad");
