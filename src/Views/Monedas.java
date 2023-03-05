@@ -12,15 +12,13 @@ import Clases.Convertir;
  */
 public class Monedas extends javax.swing.JFrame {
 
-
     public Monedas() {
         initComponents();
         setLocationRelativeTo(null);
     }
- 
 
     Convertir convertir = new Convertir();
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -49,6 +47,11 @@ public class Monedas extends javax.swing.JFrame {
 
         btnIngresarCantidad.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         btnIngresarCantidad.setText("Ingrese la cantidad");
+        btnIngresarCantidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarCantidadActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
@@ -96,8 +99,8 @@ public class Monedas extends javax.swing.JFrame {
                     .addComponent(cbxOrigin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbxDestino))
                 .addGap(90, 90, 90)
-                .addComponent(btnIngresarCantidad)
-                .addGap(116, 116, 116))
+                .addComponent(btnIngresarCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(100, 100, 100))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(142, 142, 142)
@@ -118,6 +121,20 @@ public class Monedas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnIngresarCantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarCantidadActionPerformed
+        try {
+
+            String origin = (String) cbxOrigin.getSelectedItem();
+            String destino = (String) cbxDestino.getSelectedItem();
+            String cantidad = JOptionPane.showInputDialog("Ingrese la cantidad");
+            JOptionPane.showMessageDialog(
+                    null, cantidad + " " + origin + " a " + destino + " son " + 
+                            convertir.conversion(origin, destino, cantidad));
+        } catch (IOException ex) {
+            Logger.getLogger(Monedas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnIngresarCantidadActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
